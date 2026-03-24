@@ -2,6 +2,8 @@
 
 A web-based CAN bus analyzer and transmitter for Raspberry Pi 3 B+ — a CANoe-like tool accessible from any browser on the same network.
 
+![Monitor screenshot](img/monitor.png)
+
 ![PiCAN Studio](https://img.shields.io/badge/platform-Raspberry%20Pi%203B%2B-red) ![Python](https://img.shields.io/badge/python-3.11%2B-blue) ![License](https://img.shields.io/badge/license-AGPL--3.0--or--later-blue)
 
 ## Features
