@@ -1,0 +1,16 @@
+{
+  "interface": "can0",
+  "mode": "normal",
+  "fd_enabled": false,
+  "bitrate": 500000,
+  "dbitrate": 2000000,
+  "buffer_size": 10000,
+  "auto_scroll": true,
+  "timestamp_format": "relative",
+  "hex_uppercase": true,
+  "theme": "dark",
+  "ws_interval_ms": 50,
+  "graph_hz": 10,
+  "log_dir": "/opt/pican-studio/logs",
+  "log_max_size_mb": 50
+}

@@ -1,0 +1,17 @@
+[Unit]
+Description=PiCAN Studio - CAN Bus Analyzer
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/pican-studio
+ExecStartPre=/opt/pican-studio/scripts/setup-can.sh
+ExecStart=/opt/pican-studio/venv/bin/python -m server.app
+Restart=on-failure
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

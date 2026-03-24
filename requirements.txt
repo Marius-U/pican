@@ -1,0 +1,4 @@
+aiohttp>=3.9
+aiofiles>=23.0
+python-can>=4.3
+cantools>=39.0

@@ -1,0 +1,137 @@
+{
+  "templates": [
+    {
+      "name": "OBD-II: RPM Request",
+      "can_id": 2015,
+      "ide": false, "fd": false, "brs": false,
+      "dlc": 8, "data": [2, 1, 12, 0, 0, 0, 0, 0],
+      "mode": "one-shot", "period_ms": 100, "burst_count": 1, "burst_interval_ms": 10, "enabled": true
+    },
+    {
+      "name": "OBD-II: Vehicle Speed Request",
+      "can_id": 2015,
+      "ide": false, "fd": false, "brs": false,
+      "dlc": 8, "data": [2, 1, 13, 0, 0, 0, 0, 0],
+      "mode": "one-shot", "period_ms": 100, "burst_count": 1, "burst_interval_ms": 10, "enabled": true
+    },
+    {
+      "name": "OBD-II: Coolant Temp Request",
+      "can_id": 2015,
+      "ide": false, "fd": false, "brs": false,
+      "dlc": 8, "data": [2, 1, 5, 0, 0, 0, 0, 0],
+      "mode": "one-shot", "period_ms": 100, "burst_count": 1, "burst_interval_ms": 10, "enabled": true
+    },
+    {
+      "name": "OBD-II: Supported PIDs",
+      "can_id": 2015,
+      "ide": false, "fd": false, "brs": false,
+      "dlc": 8, "data": [2, 1, 0, 0, 0, 0, 0, 0],
+      "mode": "one-shot", "period_ms": 100, "burst_count": 1, "burst_interval_ms": 10, "enabled": true
+    },
+    {
+      "name": "UDS: Default Session",
+      "can_id": 2015,
+      "ide": false, "fd": false, "brs": false,
+      "dlc": 8, "data": [2, 16, 1, 0, 0, 0, 0, 0],
+      "mode": "one-shot", "period_ms": 100, "burst_count": 1, "burst_interval_ms": 10, "enabled": true
+    },
+    {
+      "name": "UDS: Extended Session",
+      "can_id": 2015,
+      "ide": false, "fd": false, "brs": false,
+      "dlc": 8, "data": [2, 16, 3, 0, 0, 0, 0, 0],
+      "mode": "one-shot", "period_ms": 100, "burst_count": 1, "burst_interval_ms": 10, "enabled": true
+    },
+    {
+      "name": "UDS: Tester Present",
+      "can_id": 2015,
+      "ide": false, "fd": false, "brs": false,
+      "dlc": 8, "data": [2, 62, 0, 0, 0, 0, 0, 0],
+      "mode": "periodic", "period_ms": 2000, "burst_count": 1, "burst_interval_ms": 10, "enabled": true
+    },
+    {
+      "name": "UDS: ECU Reset Hard",
+      "can_id": 2015,
+      "ide": false, "fd": false, "brs": false,
+      "dlc": 8, "data": [2, 17, 1, 0, 0, 0, 0, 0],
+      "mode": "one-shot", "period_ms": 100, "burst_count": 1, "burst_interval_ms": 10, "enabled": true
+    },
+    {
+      "name": "UDS: Read DTCs",
+      "can_id": 2015,
+      "ide": false, "fd": false, "brs": false,
+      "dlc": 8, "data": [3, 25, 2, 255, 0, 0, 0, 0],
+      "mode": "one-shot", "period_ms": 100, "burst_count": 1, "burst_interval_ms": 10, "enabled": true
+    },
+    {
+      "name": "UDS: Clear DTCs",
+      "can_id": 2015,
+      "ide": false, "fd": false, "brs": false,
+      "dlc": 8, "data": [4, 20, 255, 255, 255, 0, 0, 0],
+      "mode": "one-shot", "period_ms": 100, "burst_count": 1, "burst_interval_ms": 10, "enabled": true
+    },
+    {
+      "name": "CANopen: NMT Start",
+      "can_id": 0,
+      "ide": false, "fd": false, "brs": false,
+      "dlc": 2, "data": [1, 0],
+      "mode": "one-shot", "period_ms": 100, "burst_count": 1, "burst_interval_ms": 10, "enabled": true
+    },
+    {
+      "name": "CANopen: NMT Stop",
+      "can_id": 0,
+      "ide": false, "fd": false, "brs": false,
+      "dlc": 2, "data": [2, 0],
+      "mode": "one-shot", "period_ms": 100, "burst_count": 1, "burst_interval_ms": 10, "enabled": true
+    },
+    {
+      "name": "CANopen: NMT Pre-Operational",
+      "can_id": 0,
+      "ide": false, "fd": false, "brs": false,
+      "dlc": 2, "data": [128, 0],
+      "mode": "one-shot", "period_ms": 100, "burst_count": 1, "burst_interval_ms": 10, "enabled": true
+    },
+    {
+      "name": "CANopen: NMT Reset Node",
+      "can_id": 0,
+      "ide": false, "fd": false, "brs": false,
+      "dlc": 2, "data": [129, 0],
+      "mode": "one-shot", "period_ms": 100, "burst_count": 1, "burst_interval_ms": 10, "enabled": true
+    },
+    {
+      "name": "CANopen: SYNC",
+      "can_id": 128,
+      "ide": false, "fd": false, "brs": false,
+      "dlc": 0, "data": [],
+      "mode": "periodic", "period_ms": 100, "burst_count": 1, "burst_interval_ms": 10, "enabled": true
+    },
+    {
+      "name": "J1939: Request Engine Speed",
+      "can_id": 418611454,
+      "ide": true, "fd": false, "brs": false,
+      "dlc": 3, "data": [240, 4, 0],
+      "mode": "one-shot", "period_ms": 100, "burst_count": 1, "burst_interval_ms": 10, "enabled": true
+    },
+    {
+      "name": "General: Custom Empty",
+      "can_id": 256,
+      "ide": false, "fd": false, "brs": false,
+      "dlc": 8, "data": [0, 0, 0, 0, 0, 0, 0, 0],
+      "mode": "one-shot", "period_ms": 100, "burst_count": 1, "burst_interval_ms": 10, "enabled": true
+    },
+    {
+      "name": "General: All-Ones Test",
+      "can_id": 2047,
+      "ide": false, "fd": false, "brs": false,
+      "dlc": 8, "data": [255, 255, 255, 255, 255, 255, 255, 255],
+      "mode": "one-shot", "period_ms": 100, "burst_count": 1, "burst_interval_ms": 10, "enabled": true
+    },
+    {
+      "name": "General: Incrementing Data",
+      "can_id": 256,
+      "ide": false, "fd": false, "brs": false,
+      "dlc": 8, "data": [1, 2, 3, 4, 5, 6, 7, 8],
+      "mode": "periodic", "period_ms": 100, "burst_count": 1, "burst_interval_ms": 10, "enabled": true
+    }
+  ]
+}

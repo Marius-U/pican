@@ -1,0 +1,22 @@
+# Runtime config (auto-saved by the app — do not commit)
+config/runtime.json
+config/interface.json
+
+# Logs
+logs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+*.egg-info/
+
+# Claude Code local settings
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
